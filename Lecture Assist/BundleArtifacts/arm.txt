@@ -1,0 +1,2 @@
+MainPackage=E:\Digital Designing and Programming\Code.Fun.Do\Lecture Assist\Lecture Assist\bin\ARM\Debug\Lecture Assist_1.0.6.0_ARM_Debug.appx
+ResourcePack=E:\Digital Designing and Programming\Code.Fun.Do\Lecture Assist\Lecture Assist\bin\ARM\Debug\Lecture Assist_1.0.6.0_scale-400.appx

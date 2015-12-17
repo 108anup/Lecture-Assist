@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Lecture_Assist.studCurrentSession"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lecture_Assist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer
+            VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Auto"
+            >
+            <StackPanel Name="CommentsStackPanel" Orientation="Vertical">
+
+            </StackPanel>
+
+        </ScrollViewer>
+
+        <RelativePanel Grid.Row="1">
+            <TextBox  Height="70" Text="Comment" Name="commentInput" RelativePanel.AlignLeftWithPanel="True" RelativePanel.LeftOf="AddCommentButton" Margin="10"/>
+            <Button Name="AddCommentButton" Content="Post Comment" RelativePanel.AlignRightWithPanel="True" Click="AddCommentButton_Click"/>
+        </RelativePanel>
+
+    </Grid>
+</Page>

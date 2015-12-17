@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Lecture_Assist.MainWelcomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lecture_Assist"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="0" Grid.ColumnSpan="2" FontSize="48" Margin="0,30,0,0" HorizontalAlignment="Center">Lecture Assist</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="User Name" Margin="100,10,0,10"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="usernameInput" Margin="50,10,50,10" HorizontalAlignment="Stretch" VerticalAlignment="Top" Text="" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Password" Margin="100,10,0,10"/>
+        <PasswordBox Grid.Row="2" Grid.Column="1" Name="Passwordinput" Margin="50,10,50,10" HorizontalAlignment="Stretch" VerticalAlignment="Top" />
+        <Button Grid.Row="3" Content="Login" Margin="100,10,0,10" Click="Login_Button_Click" />
+        <Button Grid.Row="3"  Grid.Column="1" Content="SignUp" Margin="49.667,10,0,0" VerticalAlignment="Top"  Click="Register_Button_Click"/>
+        <TextBlock Margin="10" Text="" Name="errMsg" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Grid.Row="4" Foreground="Red"/>
+    </Grid>
+</Page>
